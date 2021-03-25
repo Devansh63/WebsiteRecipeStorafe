@@ -1,0 +1,85 @@
+<!--Page fills the fields with the recipe details which can be changed.-->
+<div class="container py-5">
+    <form  method="POST" action='/saveeditrecipe/<%= recipe.slug%>' >
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+
+          <label for="name">Name of Recipe</label>
+          <input type="text" class="form-control" id="name" name="name" value='<%= recipe.name %>'>
+
+        </div>
+
+        <div class="form-group col-md-6">
+
+          <label for="description">Description</label>
+          
+          <input type="text" class="form-control" id="description" name = "description" value='<%= recipe.description %>'>
+
+        </div>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="ingredients">Ingredients List (separate each with , )</label>
+
+        <input type="text" class="form-control" id="ingredients" name ="ingredients"value='<%= recipe.ingredients %>'>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="directions">Directions (separate each with . )</label>
+
+        <textarea class="form-control" id="directions" name = "directions"
+        ><%= recipe.directions%></textarea>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group col-md-4">
+
+          <label for="prepTime">Prep Time (minutes)</label>
+
+          <input type="text" class="form-control" id="prepTime" name="prepTime" value='<%= recipe.prepTime %>'>
+
+        </div>
+
+        <div class="form-group col-md-4">
+
+          <label for="cookTime">Cook Time (minutes)</label>
+
+          <input type="text" class="form-control" id="cookTime" name="cookTime" value='<%= recipe.cookTime %>'>
+         </div>
+
+        <div class="form-group col-md-4">
+         
+          <label for="servings">Servings</label>
+          <input type="text" class="form-control" id="servings" name="servings" value='<%= recipe.servings %>'>
+  
+        </div>
+        <div class="form-group col-md-4">
+
+            <label for="privacy">View Privileges</label>
+  
+            <select id="private" name = "private" class="form-control">
+  
+              <option selected>Choose...</option>
+  
+              <option>Private</option>
+  
+              <option>Public</option>
+  
+            </select>
+  
+          </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-orange">Save</button>
+      
+    </form>
+  </div>

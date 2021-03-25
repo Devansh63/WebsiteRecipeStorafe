@@ -1,0 +1,33 @@
+<!--
+    Displaying all public pages
+-->
+<div id="site-main">
+    <div class="container">
+        <!-- card columns -->
+        <div class="card-columns">
+            <!-- card -->
+            <%if (recipes && recipes.length !== 0) { %>
+            <% for (let recipe of recipes) { %>
+            <div class="card">
+                <a href="/recipe/<%= recipe.slug %>">
+                    <img class="card-img-top" src="/uploads/<%=recipe.image %>" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= recipe.name %>
+                        </h5>
+                        <p class="card-text">
+                            <%= recipe.description %>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <% } } %>
+            <!-- end card -->
+        </div>
+           <!-- end card columns -->
+        <% if (!recipes || recipes.length === 0) {%>
+            <div class="text-center">No recipes here.</div>
+        <% } %>
+     
+    </div>
+</div>

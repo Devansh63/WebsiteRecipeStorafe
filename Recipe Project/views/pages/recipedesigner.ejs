@@ -1,0 +1,93 @@
+<!--Page allows the user to create a recipe-->
+<div class="container py-5">
+
+    
+    <form  method="POST" action='/saveRecipe' enctype="multipart/form-data">
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+
+          <label for="name">Name of Recipe</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Ex: Vegan Pizza">
+
+        </div>
+
+        <div class="form-group col-md-6">
+
+          <label for="description">Description</label>
+          
+          <input type="text" class="form-control" id="description" name = "description" placeholder="Ex: Quick and easy to make pancakes with a twist.">
+
+        </div>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="ingredients">Ingredients List (separate each with , )</label>
+
+        <input type="text" class="form-control" id="ingredients" name ="ingredients"placeholder="Ex: 1c cheese, 2 tsp salt, 3/4 c sugar">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="directions">Directions (separate each with . )</label>
+
+        <textarea class="form-control" id="directions" name = "directions"
+          placeholder="Ex: Preheat oven to 360F. Mix dry ingredients. Add cream cheese and vanilla, mix thoroughly."></textarea>
+
+      </div>
+
+
+      <div class="form-row">
+
+        <div class="form-group col-md-4">
+
+          <label for="prepTime">Prep Time (minutes)</label>
+
+          <input type="text" class="form-control" id="prepTime" name="prepTime" placeholder="Ex: 10">
+
+        </div>
+
+        <div class="form-group col-md-4">
+
+          <label for="cookTime">Cook Time (minutes)</label>
+
+          <input type="text" class="form-control" id="cookTime" name="cookTime" placeholder="Ex. 30">
+         </div>
+
+        <div class="form-group col-md-4">
+         
+          <label for="servings">Servings</label>
+          <input type="text" class="form-control" id="servings" name="servings" placeholder="Ex. 4-6">
+  
+        </div>
+        <div class="form-group col-md-4">
+
+            <label for="privacy">View Privileges</label>
+  
+            <select id="private" name = "private" class="form-control">
+  
+              <option selected>Choose...</option>
+  
+              <option>Private</option>
+  
+              <option>Public</option>
+  
+            </select>
+  
+          </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-group">
+          <label for="image">Picture of Recipe Input</label>
+          <input id='image' name="image" type="file" class="form-control-file" >
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-orange">Save</button>
+      
+    </form>
+  </div>

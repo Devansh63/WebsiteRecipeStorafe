@@ -1,0 +1,28 @@
+#adiv {
+    border-right: 1px solid  #8080802d; 
+}
+
+#add-box {
+    width: 80%;
+    display: inline-block;
+}
+
+.item {
+    display: list-item;
+    width: 75%;
+    text-align: left;
+}
+
+.item-on {
+   text-decoration: none;
+}
+
+.item-on:hover {
+    background-color:#ff6f0048;
+ }
+
+.item-off {
+   background-color: #8080802d;
+   text-decoration: line-through;
+   color: grey;
+}

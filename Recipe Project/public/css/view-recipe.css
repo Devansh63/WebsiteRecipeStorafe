@@ -1,0 +1,37 @@
+svg {
+    width: 1em;
+    height: 0.70em;
+    margin-bottom: 0.2em;
+    color: #ff6d00
+}
+
+.star-icon:hover {
+    color: #e66200;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #e66200;
+}
+
+.rounded-border{
+    border: solid rgba(204, 207, 206, 0.979);
+    border-radius: 15px;
+}
+
+.recipe-body {
+    margin: 20px 0px;
+}
+
+.directions b {
+    font-size: 2rem;
+}
+
+
+
+
+
+

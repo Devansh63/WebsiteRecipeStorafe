@@ -1,0 +1,168 @@
+/* -------------------------------------
+Colors:
+
+Orange: #ff6d00 // RGB 255, 109, 0 (hover: #e66200) 
+Blue: #3ca8f7
+Gray: #546e7a
+Green: #388e3c 
+------------------------------------- */
+
+
+/* -------------------------------------
+Main Section
+------------------------------------- */
+
+#site-main {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+/* -------------------------------------
+Home
+------------------------------------- */
+
+
+/*.home.bgimage {
+    width: 100%;
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .bgimage-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+}*/
+
+.home.jumbotron {
+    color: white;
+    background-image: url("/images/hero_overlay.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 0px;
+}
+
+.home.jumbotron .container {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* -------------------------------------
+Layout
+------------------------------------- */
+
+.w-700 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------
+Buttons
+------------------------------------- */
+
+.btn-orange {
+    color: #fff;
+    background-color: #ff6d00;
+    border-color: #ff6d00;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: #e66200;
+    border-color: #e66200;
+}
+
+.btn-orange.focus,
+.btn-orange:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 109, 0, 0.25);
+}
+
+.btn-outline-orange {
+    color: #ff6d00;
+    border-color: #ff6d00;
+}
+
+.btn-outline-orange:hover {
+    color: #ffffff;
+    background-color: #ff6d00;
+    border-color: #ff6d00;
+}
+
+button.btn-orange a,
+button.btn-orange a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* -------------------------------------
+Forms
+------------------------------------- */
+
+
+/* orange focus */
+
+.form-control:focus {
+    border-color: rgba(255, 109, 0, 0.25);
+    box-shadow: rgba(255, 109, 0, 0.25) 0px 0px 0px 0.2rem;
+}
+
+
+/* -------------------------------------
+Cards
+------------------------------------- */
+
+.card-columns .card {
+    transition: all 0.5s ease;
+}
+
+.card-columns .card:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card h5.card-title {
+    font-size: 1rem;
+    color: #212529;
+}
+
+.card p.card-text {
+    font-size: .9rem;
+    color: #212529;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card img.single {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+/* footer */
+
+#site-footer {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 12px;
+    background: #222;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

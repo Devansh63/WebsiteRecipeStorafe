@@ -1,0 +1,23 @@
+<!--
+    Display account information to change
+-->
+<div id="site-main">
+    <div class="container">
+        <form class="form-signin" method="POST" action="/editinfo/<%= user.slug%>">
+            <h1 class="h3 mb-3 font-weight-normal text-center">Edit Account</h1>
+            <label for = "fname">First Name: </label>
+            <input type="name" name="fname" class="form-control mb-3" value='<%= user.fname %>' required autofocus>
+            <label for = "lame">Last Name: </label>
+            <input type="name" name="lname" class="form-control mb-3" value='<%= user.lname %>' required autofocus>
+            <label for = "email">Email: </label>
+            <input type="email" name="email" class="form-control mb-3" value='<%= user.email %>' required autofocus>
+            <label for = "username">User Name: </label>
+            <input type="name" name="username" class="form-control mb-3" value='<%= user.username %>' required autofocus>
+            <button class="btn btn-lg btn-orange btn-block" type="submit">Edit Account</button>
+        </form>
+        <form class="form-signin" method="GET" action="/changepwd/<%= user.slug%>">
+        
+            <button class="btn btn-lg btn-orange btn-block" type = "submit"   >Change Password</button>
+        </form>
+    </div>
+</div>
